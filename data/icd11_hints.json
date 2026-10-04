@@ -1,0 +1,31 @@
+{
+  "_comment": "Best-effort ICD-11 MMS codes for diseases in the itachi9604 symptom dataset. Used by scripts/build_db.py ONLY when live WHO ICD-11 API credentials are absent or a lookup fails. Codes were assigned from the ICD-11 MMS classification; verify against https://icd.who.int/icdapi (set ICD_CLIENT_ID/ICD_CLIENT_SECRET to enrich/override live).",
+  "codes": {
+    "Fungal infection": { "code": "1F2F", "title": "Dermatophytosis" },
+    "Allergy": { "code": "CA08", "title": "Allergic rhinitis" },
+    "AIDS": { "code": "1C62", "title": "HIV disease" },
+    "Diabetes mellitus": { "code": "5A11", "title": "Type 2 diabetes mellitus" },
+    "Gastroenteritis": { "code": "1A03", "title": "Infectious gastroenteritis or colitis of presumed infectious origin" },
+    "Bronchial Asthma": { "code": "CA23", "title": "Asthma" },
+    "Hypertension": { "code": "BA00", "title": "Essential hypertension" },
+    "Migraine": { "code": "8A80", "title": "Migraine" },
+    "Paralysis (brain hemorrhage)": { "code": "8B01", "title": "Intracerebral haemorrhage" },
+    "Eczema": { "code": "EA88", "title": "Atopic dermatitis" },
+    "Chicken pox": { "code": "1E90", "title": "Varicella" },
+    "Hypothyroidism": { "code": "5A00", "title": "Hypothyroidism" },
+    "Hyperthyroidism": { "code": "5A02", "title": "Hyperthyroidism" },
+    "Urinary tract infection": { "code": "GC08", "title": "Lower urinary tract infection" },
+    "Psoriasis": { "code": "EA90", "title": "Psoriasis" },
+    "Impetigo": { "code": "1B50", "title": "Impetigo" },
+    "Dengue": { "code": "1D2Y", "title": "Dengue" },
+    "Malaria": { "code": "1C40", "title": "Malaria" },
+    "Common Cold": { "code": "CA00", "title": "Acute nasopharyngitis (common cold)" },
+    "Pneumonia": { "code": "CA40", "title": "Bacterial pneumonia" },
+    "Dimorphic hemorrhoids (piles)": { "code": "DB60", "title": "Haemorrhoid" },
+    "Heart attack": { "code": "BA41", "title": "Acute myocardial infarction" },
+    "Varicose veins": { "code": "BC80", "title": "Varicose veins of lower extremities" },
+    "Osteoarthritis": { "code": "FA00", "title": "Primary osteoarthritis" },
+    "Acne": { "code": "ED80", "title": "Acne" },
+    "Tuberculosis": { "code": "1B10", "title": "Respiratory tuberculosis" }
+  }
+}

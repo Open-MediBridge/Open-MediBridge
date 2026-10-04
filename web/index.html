@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>open-medi — voice symptom triage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">⚕ <span>open-<b>medi</b></span></div>
+    <div id="health" class="health-chip">checking…</div>
+  </header>
+
+  <main>
+    <section class="panel record-panel">
+      <button id="recordBtn" class="record-btn" title="Record symptoms">
+        <span class="mic">🎙️</span>
+      </button>
+      <p class="hint" id="recordHint">Tap the mic and describe your symptoms</p>
+      <p class="status" id="status" role="status"></p>
+    </section>
+
+    <section class="panel" id="transcriptPanel" hidden>
+      <h2>Transcript</h2>
+      <p class="transcript" id="transcriptText"></p>
+      <p class="muted" id="transcriptMeta"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Or type your symptoms</h2>
+      <form id="typedForm">
+        <textarea id="typedText" rows="3"
+          placeholder="e.g. Burning feeling in my chest after meals and a sour taste in my mouth"></textarea>
+        <button type="submit">Analyze</button>
+      </form>
+    </section>
+
+    <section id="results" hidden>
+      <div class="panel">
+        <h2>Assessment</h2>
+        <p id="summary"></p>
+      </div>
+      <div class="panel red" id="redFlags" hidden>
+        <h2>⚠️ Red flags — seek care urgently</h2>
+        <ul id="redFlagList"></ul>
+      </div>
+      <div id="conditions"></div>
+      <div class="panel">
+        <h2>General advice</h2>
+        <p id="advice"></p>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>WHO ICD-11 coding</h2>
+      <p class="muted">Live lookup against the WHO ICD-11 API (needs credentials in .env).</p>
+      <form id="icdForm">
+        <input id="icdQuery" placeholder="e.g. migraine, diabetes, 5A11" />
+        <button type="submit">Search</button>
+      </form>
+      <ul id="icdResults" class="icd-results"></ul>
+    </section>
+
+    <footer class="disclaimer">
+      ⚠️ open-medi is an educational demonstration, <b>not a medical device</b>.
+      Suggestions are statistical guesses over a small public dataset and an AI language model.
+      Always consult a qualified healthcare professional.
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

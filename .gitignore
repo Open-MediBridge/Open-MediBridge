@@ -1,0 +1,20 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Generated knowledge base (rebuild with: python scripts/build_db.py)
+data/*.db
+
+# Local secrets
+.env
+
+# Model / cache artifacts
+models/
+*.ct2
+huggingface_cache/

@@ -1,0 +1,113 @@
+{
+  "_comment": "Offline fallback knowledge base used by scripts/build_db.py when the public dataset cannot be downloaded. Symptom phrases are deliberately lay-friendly so transcribed speech embeds close to them. Extend freely or replace with the full dataset.",
+  "conditions": [
+    {
+      "name": "Common Cold",
+      "icd11_code": "CA00",
+      "icd11_title": "Acute nasopharyngitis (common cold)",
+      "description": "A mild, self-limiting viral infection of the nose and throat, most often caused by rhinoviruses. Symptoms build over one to two days and usually resolve within a week to ten days.",
+      "symptoms": ["runny nose", "blocked or stuffy nose", "sneezing", "sore throat", "mild cough", "mild fever", "feeling generally unwell", "mild headache"],
+      "precautions": ["Rest and stay hydrated", "Wash hands often to avoid spreading the virus", "Use saline drops or steam inhalation for congestion", "See a doctor if fever lasts more than 3 days or breathing becomes difficult"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Influenza",
+      "icd11_code": "1E30",
+      "icd11_title": "Influenza due to identified seasonal influenza virus",
+      "description": "A viral infection of the respiratory tract caused by influenza viruses. Onset is typically sudden, with high fever and body aches, and it differs from the common cold by its severity.",
+      "symptoms": ["high fever", "chills and sweats", "muscle aches all over the body", "severe tiredness and weakness", "dry cough", "headache", "sore throat", "blocked nose"],
+      "precautions": ["Rest and drink plenty of fluids", "Stay home to avoid infecting others", "Annual flu vaccination is the best prevention", "Seek urgent care for shortness of breath, chest pain, or persistent high fever"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Allergic Rhinitis",
+      "icd11_code": "CA08",
+      "icd11_title": "Allergic rhinitis",
+      "description": "An allergic reaction in the nose triggered by pollen, dust mites, mold, or animal dander. Symptoms flare on exposure and can be seasonal or year-round.",
+      "symptoms": ["repeated sneezing", "watery itchy eyes", "runny nose with clear fluid", "itchy nose and throat", "nasal congestion", "postnasal drip"],
+      "precautions": ["Identify and avoid the trigger where possible", "Antihistamines relieve symptoms", "Keep windows closed during high pollen days", "See a doctor if symptoms interfere with sleep or daily life"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Bronchial Asthma",
+      "icd11_code": "CA23",
+      "icd11_title": "Asthma",
+      "description": "A chronic inflammatory disease of the airways in which they narrow and swell in response to triggers such as allergens, exercise, cold air, or infection, causing episodes of reversible breathing difficulty.",
+      "symptoms": ["wheezing", "shortness of breath", "chest tightness", "dry cough, often worse at night", "difficulty breathing during exercise"],
+      "precautions": ["Carry the prescribed reliever inhaler at all times", "Identify and avoid personal triggers", "Follow the written asthma action plan from your doctor", "Seek emergency care if the inhaler does not relieve breathlessness or speech is difficult"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Migraine",
+      "icd11_code": "8A80",
+      "icd11_title": "Migraine",
+      "description": "A primary headache disorder marked by recurrent moderate-to-severe throbbing headaches, often one-sided and aggravated by movement, frequently with nausea and sensitivity to light and sound.",
+      "symptoms": ["throbbing one-sided headache", "nausea or vomiting", "sensitivity to light", "sensitivity to sound", "visual aura such as flashing lights", "worsening pain with normal activity"],
+      "precautions": ["Rest in a dark, quiet room at onset", "Track triggers such as poor sleep, stress, and certain foods", "Take prescribed medication early in the attack", "Seek urgent care for the worst headache of your life, or headache with fever, stiff neck, confusion, or weakness"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Acute Gastroenteritis",
+      "icd11_code": "1A03",
+      "icd11_title": "Infectious gastroenteritis or colitis of presumed infectious origin",
+      "description": "Infection or irritation of the stomach and intestines, usually viral, causing sudden diarrhea and vomiting. Most cases settle in a few days; dehydration is the main risk.",
+      "symptoms": ["loose watery diarrhea", "vomiting", "stomach cramps", "nausea", "mild fever", "loss of appetite", "weakness"],
+      "precautions": ["Rehydrate with oral rehydration solution in small frequent sips", "Eat bland, light foods as tolerated", "Wash hands carefully and disinfect surfaces", "Seek care for blood in stool, signs of dehydration, or diarrhea lasting more than 3 days"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Gastroesophageal Reflux Disease",
+      "icd11_code": null,
+      "icd11_title": null,
+      "description": "A chronic condition in which stomach acid flows back into the esophagus because the valve between them weakens, producing heartburn and irritation. Often worsens after large meals or when lying down.",
+      "symptoms": ["heartburn, a burning feeling behind the breastbone", "acid or food coming back up", "bitter taste in the mouth", "chest discomfort after meals", "worse symptoms when lying down or bending over", "chronic sore throat or hoarseness"],
+      "precautions": ["Eat smaller meals and avoid eating late at night", "Limit spicy foods, alcohol, caffeine, and fatty meals", "Raise the head of the bed", "See a doctor for frequent symptoms, difficulty swallowing, or unexplained weight loss"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Urinary Tract Infection",
+      "icd11_code": "GC08",
+      "icd11_title": "Lower urinary tract infection",
+      "description": "Bacterial infection of the bladder and lower urinary tract, far more common in women. It causes painful, urgent urination; untreated it can spread upward to the kidneys.",
+      "symptoms": ["burning pain when passing urine", "frequent urge to urinate, passing only small amounts", "cloudy or strong-smelling urine", "lower abdominal or pelvic discomfort", "blood in the urine", "mild fever"],
+      "precautions": ["Drink plenty of water", "Do not hold urine; empty the bladder fully", "See a doctor for a urine test and antibiotics if symptoms persist", "Seek urgent care for fever, back pain, or vomiting, which suggest kidney involvement"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Essential Hypertension",
+      "icd11_code": "BA00",
+      "icd11_title": "Essential hypertension",
+      "description": "Persistently raised blood pressure without a single identifiable secondary cause. Usually silent for years, it is a major risk factor for heart disease, stroke, and kidney damage.",
+      "symptoms": ["usually no symptoms at all", "headaches, especially at the back of the head in the morning", "dizziness", "blurred vision", "nosebleeds in severe rises", "discovered on routine blood pressure checks"],
+      "precautions": ["Reduce salt intake and eat more fruit and vegetables", "Exercise regularly and keep a healthy weight", "Limit alcohol and stop smoking", "Monitor blood pressure and take prescribed medication daily; seek care for readings above 180/120 with symptoms"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Type 2 Diabetes Mellitus",
+      "icd11_code": "5A11",
+      "icd11_title": "Type 2 diabetes mellitus",
+      "description": "A metabolic disorder in which the body resists insulin or does not make enough of it, so blood glucose stays high. It develops gradually and is strongly linked to weight and inactivity.",
+      "symptoms": ["frequent urination, especially at night", "excessive thirst", "unexplained weight loss", "constant tiredness", "blurred vision", "slow-healing cuts or wounds", "tingling or numbness in hands and feet"],
+      "precautions": ["Follow a balanced, low-sugar diet and exercise plan", "Take prescribed medication or insulin consistently", "Check blood glucose as advised and keep appointments", "Seek urgent care for very high glucose with vomiting, confusion, or fruity-smelling breath"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Pneumonia",
+      "icd11_code": "CA40",
+      "icd11_title": "Bacterial pneumonia",
+      "description": "Infection that inflames the air sacs of one or both lungs, which may fill with fluid. Bacterial pneumonia often follows a cold or flu and can become serious, especially in the young and elderly.",
+      "symptoms": ["cough with green, yellow, or bloody phlegm", "high fever with chills", "sharp chest pain that is worse when breathing or coughing", "shortness of breath", "rapid breathing", "severe tiredness", "confusion in older adults"],
+      "precautions": ["See a doctor promptly; antibiotics are needed for bacterial pneumonia", "Rest and drink plenty of fluids", "Complete the full course of prescribed antibiotics", "Seek emergency care for blue lips, severe breathlessness, or chest pain"],
+      "source": "built-in fallback seed"
+    },
+    {
+      "name": "Dengue",
+      "icd11_code": "1D2Y",
+      "icd11_title": "Dengue",
+      "description": "A mosquito-borne viral infection common in tropical regions. Fever is typically high and sudden, with severe body aches; the dangerous phase comes as fever falls, when plasma can leak.",
+      "symptoms": ["sudden high fever", "severe headache", "pain behind the eyes", "severe muscle and joint pain", "skin rash", "nausea and vomiting", "mild bleeding such as nose or gum bleeds", "feeling extremely weak"],
+      "precautions": ["Use paracetamol; avoid aspirin and ibuprofen, which raise bleeding risk", "Drink plenty of fluids", "Watch for warning signs as fever falls: severe abdominal pain, repeated vomiting, bleeding, restlessness", "Get urgent hospital care if warning signs appear"],
+      "source": "built-in fallback seed"
+    }
+  ]
+}
